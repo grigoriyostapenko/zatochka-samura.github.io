@@ -1,0 +1,38 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	$base-size: 16px;
+	font-size: $base-size;
+	overflow-x: hidden !important;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+ul {list-style: none;
+	li {
+		a {
+			display: flex;
+		}
+	}
+}
+
+a:link,     /* unvisited link */
+a:visited,  /* visited link */
+a:hover,  /* mouse over link */
+a:active {
+	text-decoration: none;
+}

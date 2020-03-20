@@ -1,0 +1,108 @@
+.sh-head {
+	display: block;
+	height: 85vh;
+	width: 100%;
+	background: url("../img/bg.jpg") no-repeat;
+	background-size: cover;
+	background-color: lighten($main, 15%);
+	background-blend-mode: multiply;
+	position: relative;
+	z-index: 1;
+
+
+	&__block {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		backdrop-filter: blur(10px);
+		position: relative;
+	}
+	
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 100px;
+		color: $white;
+		font-family: $roboto;
+		font-weight: 700;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: 24px;
+		color: rgba($white, .6);
+		margin-bottom: 0;
+		font-family: $echo;
+		font-weight: 300;
+		width: 100%;
+		max-width: 1240px;
+		text-align: center;
+
+		& > span {
+			font-family: $mons;
+			display: block;
+			font-weight: 600;
+			margin-bottom: 20px;
+			color: $white;
+		}
+	}
+
+	&__ads {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $blue;
+		padding: 10px 0;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: calc(25%);
+			transform: translateX(13.5%);
+			background-color: $blue;			
+			height: 100px;
+			width: 400px;
+			clip-path: polygon(5% 25%, 95% 25%, 100% 75%, 0 75%);
+			z-index: 4;
+		}
+	}
+
+	&__ad {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__prpose {
+		font-size: 24px;
+		color: $white;
+		font-family: $roboto;
+		text-transform: uppercase;
+	}
+
+	&__link {
+		font-size: 50px;
+		font-family: $bebas;
+		color: $white;
+		position: absolute;
+		right: 25%;
+		bottom: 0;
+		z-index: 6;
+	}
+
+}

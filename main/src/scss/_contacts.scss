@@ -1,0 +1,77 @@
+.sh-contacts {
+	background-color: #fff;
+	padding: 30px 0;
+
+	&__title {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $roboto;
+		font-weight: 700;
+		color: $main;
+		font-size: 70px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+
+	&__map {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+
+	&__block {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	&__address, &__phone {
+		width: 100%;
+		max-width: 500px;
+		padding: 10px 0;
+		text-align: left;
+	}
+
+	&__subtitle {
+		font-family: $roboto;
+		font-size: 25px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		font-family: $roboto;
+		font-size: 18px;
+		line-height: 1.2;
+		color: $main;
+	}
+
+	&__item {
+		color: $main;
+		font-size: 18px;
+		font-family: $mons;
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.fab {
+			color: black;
+			margin-right: 5px;
+		}
+	}
+
+	&__link {
+		color: $main;
+		justify-content: flex-start;
+		transition: all .3s ease;
+
+		&:hover {
+			transform: translateY(-2px);
+		}
+	}
+}

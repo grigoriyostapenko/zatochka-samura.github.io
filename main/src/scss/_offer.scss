@@ -1,0 +1,90 @@
+.sh-offer {
+	padding: 60px 0;
+	background-color: #fff;
+
+	&__title {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $roboto;
+		font-weight: 700;
+		color: $main;
+		font-size: 70px;
+		margin-bottom: 30px;
+	}
+
+	&__info {
+		font-size: 25px;
+		font-family: $roboto;
+		color: $grey;
+		font-weight: 300;
+		margin-bottom: 55px;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__slick {
+		width: 100%;
+		margin: 0 auto;
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&-item {
+			border: 4px solid $blue;
+			height: 450px;
+			width: 100%;
+			max-width: 300px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 30px 15px;
+			transition: all .4s ease;
+
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				margin-bottom: 30px;
+			}
+
+			&:hover {
+				transform: translateY(-10px);
+				box-shadow: 4px 4px 8px 2px rgba($main, .4);
+			}
+		}
+	}
+
+	.icon {
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.fas, .far {
+		color: $blue;
+		font-size: 55px;
+	}
+
+	&__offer {
+		font-family: $roboto;
+		color: $main;
+		font-weight: 700;
+		font-size: 22px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: 17px;
+		color: $grey;
+		font-family: $roboto;
+		line-height: 1.5;
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,43 @@
+.sh-sale {
+	background-color: #e7f6ff;
+	padding: 40px 0;
+
+	&__title {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $roboto;
+		font-weight: 700;
+		color: $main;
+		font-size: 70px;
+		margin-bottom: 30px;
+	}
+
+	.slide-icon {
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.fas, .far {
+		color: $blue;
+		font-size: 55px;
+	}
+
+	.sh-best__text {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+}
+
+.bx-wrapper {
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+.bx-prev, .bx-next {
+	display: none;
+}

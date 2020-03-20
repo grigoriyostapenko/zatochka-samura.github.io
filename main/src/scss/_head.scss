@@ -1,0 +1,58 @@
+.sh-header {
+	padding: 5px 0;
+	background-color: $white;
+	position: fixed;
+	transition: top 0.2s ease-in-out;
+	@include fixed;
+
+	&__block {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 100px;
+		width: auto;
+	}
+
+	&__menu {
+		width: 100%;
+		max-width: 800px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-link {
+			font-size: 18px;
+			color: $main;
+			font-family: $roboto;
+			font-weight: 700;
+			position: relative;
+			text-transform: capitalize;
+
+			&::after {
+				content:'';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: $main;
+				transform: scaleX(0);
+				transform-origin: bottom right;
+				transition: transform 0.3s;
+			}
+
+			&:hover {
+				color: $main;
+				&::after {
+					transform-origin: bottom left;
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+}

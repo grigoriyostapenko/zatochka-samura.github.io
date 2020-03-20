@@ -1,0 +1,134 @@
+.modal {
+	position: absolute;
+	top: calc(50% - 100.5px);
+	left: calc(50% - 160px);
+	width: 100%;
+	max-width: 320px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 61684;
+	padding: 25px;
+
+	&__title {
+		font-size: 20px;
+		font-family: $mons;
+		font-weight: bold;
+		text-align: center;
+		color: $main;
+		margin: 0 auto 30px auto;
+	}
+
+	&__phones {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 18px;
+		font-family: $roboto;
+		color: black;
+	}
+
+	&__item {
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: black;
+		}
+	}
+}
+
+
+button.modal_close {
+	background: #363D4E;
+	border: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	color: #FFFFFF;
+	cursor: pointer;
+	outline: none;
+	width: 52px;
+	height: 52px;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	transform: translate(-50%, -50%);
+	-webkit-transition: -webkit-transform 600ms;
+	-moz-transition: -moz-transform 600ms;
+	-ms-transition: -ms-transform 600ms;
+	-o-transition: -o-transform 600ms;
+	transition: transform 600ms;
+
+	i {
+		font-size: 30px;
+
+		&:hover {
+			transform: rotate(180deg);
+			transition: transform 600ms;
+		}
+	}
+}
+
+button.modal_close:hover {
+	background: #3E465A;
+	-webkit-transform: rotate(0deg) translate(-50%, -50%);
+	-moz-transform: rotate(0deg) translate(-50%, -50%);
+	-ms-transform: rotate(0deg) translate(-50%, -50%);
+	-o-transform: rotate(0deg) translate(-50%, -50%);
+	transform: rotate(0deg) translate(-50%, -50%);
+	-webkit-transition: -webkit-transform 600ms;
+	-moz-transition: -moz-transform 600ms;
+	-ms-transition: -ms-transform 600ms;
+	-o-transition: -o-transform 600ms;
+	transition: transform 600ms;
+}
+
+
+.modal {
+	opacity: 0;
+	padding: 50px;
+	position: absolute;
+	z-index: 1100;
+	-webkit-transition: opacity 600ms linear 600ms;
+	-moz-transition: opacity 600ms linear 600ms;
+	-ms-transition: opacity 600ms linear 600ms;
+	-o-transition: opacity 600ms linear 600ms;
+	transition: opacity 600ms linear 600ms;
+}
+
+.modal_info {
+	background: #FCF9F2;
+	text-align: center;
+}
+
+.modal_overlay {
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 900;
+	-webkit-transition: opacity 200ms linear;
+	-moz-transition: opacity 200ms linear;
+	-ms-transition: opacity 200ms linear;
+	-o-transition: opacity 200ms linear;
+	transition: opacity 200ms linear;
+}
+
+.display {
+	opacity: 1;
+	visibility: visible;
+}
+
+.conceal {
+	visibility: visible;
+}

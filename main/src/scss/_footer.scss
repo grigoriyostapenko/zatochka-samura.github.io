@@ -1,0 +1,35 @@
+.sh-footer {
+	padding: 20px 0;
+	background: $main;
+	color: $white;	
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 36px;
+		font-family: $echo;
+		font-weight: 400;
+	}
+
+	&__social {
+		width: 100%;
+		max-width: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-link {
+			color: $white;
+			font-size: 25px;
+			transition: all .3s ease;
+			&:hover {
+				transform: translateY(-5px);
+			}
+		}
+	}
+
+}
